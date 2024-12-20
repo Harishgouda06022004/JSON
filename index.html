@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON and CSV Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>1. Converting JSON text to JavaScript Object</h2>
+            <textarea id="jsonInput" placeholder="Enter your JSON here..."></textarea>
+            <button onclick="convertJsonToObject()">Convert JSON</button>
+            <pre id="jsonOutput" class="output"></pre>
+        </div>
+        <div class="section">
+            <h2>2. Convert JSON results into a date</h2>
+            <textarea id="jsonDateInput" placeholder="Enter your JSON with a date..."></textarea>
+            <button onclick="convertJsonToDate()">Convert to Date</button>
+            <pre id="jsonDateOutput" class="output"></pre>
+        </div>
+        <div class="section">
+            <h2>3. Convert JSON to CSV and CSV to JSON</h2>
+            <textarea id="jsonCsvInput" placeholder="Enter your JSON..."></textarea>
+            <button onclick="convertJsonToCsv()">Convert JSON to CSV</button>
+            <pre id="csvOutput" class="output"></pre>
+            <textarea id="csvInput" placeholder="Enter your CSV..."></textarea>
+            <button onclick="convertCsvToJson()">Convert CSV to JSON</button>
+            <pre id="jsonCsvOutput" class="output"></pre>
+        </div>
+        <div class="section">
+            <h2>4. Create Hash from String</h2>
+            <input type="text" id="hashInput" placeholder="Enter string to hash">
+            <button onclick="createHash()">Create Hash</button>
+            <pre id="hashOutput" class="output"></pre>
+        </div>
+    </div>
